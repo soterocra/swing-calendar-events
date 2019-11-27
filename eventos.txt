@@ -1,0 +1,2 @@
+30/11/2019;Evento teste;UNICO;sotero@gmail.com;1
+10/11/2010;Treinamento;MENSAL;hyago@gmail.com;1

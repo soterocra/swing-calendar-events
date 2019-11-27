@@ -3,14 +3,15 @@ package dev.soterocra.lab.calendarevents.entities;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import agenda.utils.PeriodicidadeEnum;
+
+import dev.soterocra.lab.calendarevents.entities.enums.FrequencyEnum;
 
 public class Event implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Date dataEvento;
 
 	private String descEvento;
-	private PeriodicidadeEnum periodicidade;
+	private FrequencyEnum periodicidade;
 	private String emailEncaminhar;
 	private int alarme;
 
@@ -18,8 +19,7 @@ public class Event implements Serializable {
 		super();
 	}
 
-	public Event(Date dataEvento, String descEvento, PeriodicidadeEnum periodicidade, String emailEncaminhar,
-			int alarme) {
+	public Event(Date dataEvento, String descEvento, FrequencyEnum periodicidade, String emailEncaminhar, int alarme) {
 		super();
 		this.dataEvento = dataEvento;
 		this.descEvento = descEvento;
@@ -44,11 +44,11 @@ public class Event implements Serializable {
 		this.descEvento = descEvento;
 	}
 
-	public PeriodicidadeEnum getPeriodicidade() {
+	public FrequencyEnum getPeriodicidade() {
 		return periodicidade;
 	}
 
-	public void setPeriodicidade(PeriodicidadeEnum periodicidade) {
+	public void setPeriodicidade(FrequencyEnum periodicidade) {
 		this.periodicidade = periodicidade;
 	}
 

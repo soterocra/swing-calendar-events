@@ -6,9 +6,13 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import org.springframework.stereotype.Component;
+
 import javax.swing.JTabbedPane;
 import java.awt.CardLayout;
 
+@Component
 public class CalendarFrame extends JFrame {
 
 	private JPanel contentPane;

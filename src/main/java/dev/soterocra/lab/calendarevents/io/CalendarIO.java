@@ -27,8 +27,8 @@ public class CalendarIO {
 
 		} catch (Exception ex) {
 			throw new Exception("Problemas na gravação do arquivo");
-
 		}
+
 	}
 
 	public Vector<Vector<Object>> getEventos() throws Exception {
